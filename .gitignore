@@ -1,4 +1,5 @@
 vendor
 wp
-app/plugins
-app/themes
+app/plugins/*
+app/themes/*
+!app/themes/metiss
