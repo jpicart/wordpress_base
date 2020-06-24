@@ -2,9 +2,12 @@
 
 ###UPDATES TO DO :
 
-* check this URL and implement `.export.sh` https://github.com/nezhar/wordpress-docker-compose , actually gives an error : `-bash: ./export.sh: Permission denied`
-* This command worked for Backup `docker exec 08b58ffa4bd9 /usr/bin/mysqldump -u dbuser --password=dbpass wordpress > backup.sql`
-* sudo bash export.sh <- worked on macbook install
+* This command worked for Backup `docker exec [Contaier] /usr/bin/mysqldump -u dbuser --password=dbpass wordpress > backup.sql`
+* sudo bash export.sh <- worked on macbook install (test)
+* sync DB (export) and (import)
+* add wp plugins basic
+* add comments in process of docker (ex: url? what is it doing,...)
+* add final comment docker to show mysql user, pwd, database
 
 Per arrancar el composer : 
 
