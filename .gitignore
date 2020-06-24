@@ -1,12 +1,10 @@
 # Hidden files
-*.DS_Store
-*Thumbs.db
 
 wp
 app/plugins/**
 app/themes/**
-/vendor/autoload.php
-/vendor/composer/*
+vendor/autoload.php
+vendor/composer/*
 vendor/fancyguy/*
 !vendor/db_backup
 !app/themes/metiss
