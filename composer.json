@@ -23,8 +23,7 @@
     ],
     "require": {
         "wordpress/wordpress": "5.4.2",
-        "wpackagist-plugin/wordpress-seo":">=7.0.2",
-        "wpackagist-theme/hueman":"*"
+        "wpackagist-plugin/wordpress-seo":">=7.0.2"
     },
     "extra": {
         "installer-paths": {
