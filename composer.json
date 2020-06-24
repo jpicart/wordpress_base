@@ -1,5 +1,10 @@
 {
+    
     "repositories": [
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
         {
             "type": "package",
             "package": {
@@ -17,10 +22,17 @@
         }
     ],
     "require": {
-        "wordpress/wordpress": "5.4.2"
+        "wordpress/wordpress": "5.4.2",
+        "wpackagist-plugin/wordpress-seo":">=7.0.2",
+        "wpackagist-theme/hueman":"*"
     },
     "extra": {
+        "installer-paths": {
+            "app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "app/themes/{$name}/": ["type:wordpress-theme"]
+        },
         "webroot-dir": "wp",
         "webroot-package": "wordpress/wordpress"
+
     }
 }
