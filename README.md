@@ -1,10 +1,11 @@
-# Wordpress__Theme_bases
+# Wordpress base
 
-To Execute the command line : 
+Per arrancar el composer : 
 
-$To install WP
-$ composer install 
-
+##To install WP
+```zsh
+composer install 
+```
 
 # Docker: PHP & MySQL
 
@@ -16,18 +17,18 @@ $ composer install
 * `MYSQL_PASSWORD` clave de acceso para conectarse a MySQL.
 * `MYSQL_DATABASE` nombre de la base de datos que se crea por defecto.
 
-##To Start Docker
+##Per arrancar el docker
 ```zsh
 docker-compose up -d 
 ```
-#Start / Stop Docker
+#Un cop arrancat el docker
 ```zsh
-docker-compose start    # Iniciar el ambiente de desarrollo
-docker-compose stop     # Detener el ambiente de desarrollo
-docker-compose down     # Detener y eliminar el ambiente de desarrollo.
+docker-compose start    # Arrancar.
+docker-compose stop     # Parar.
+docker-compose down     # Parar i eliminar els contenidors.
 ```
 
-## Estructura de Archivos
+## Estructura de fitxers
 
 * `/docker/` contiene los archivos de configuración de Docker.
 * `/wo/` carpeta para los archivos PHP del proyecto WP.
