@@ -3,7 +3,7 @@
 ###UPDATES TO DO :
 
 * check this URL and implement `.export.sh` https://github.com/nezhar/wordpress-docker-compose , actually gives an error : `-bash: ./export.sh: Permission denied`
-
+* This command worked for Backup `docker exec 08b58ffa4bd9 /usr/bin/mysqldump -u dbuser --password=dbpass wordpress > backup.sql`
 
 
 Per arrancar el composer : 
