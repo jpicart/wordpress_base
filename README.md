@@ -15,7 +15,9 @@ composer install
 En el fitxer `composer.json` es poden configurar els diferents elements del WP com per exemple :
 
 * la carpeta on s'instalará tots els fitxers 
-```zsh "webroot-dir": "wp" ```
+```zsh 
+"webroot-dir": "wp" 
+```
 
 * El llistat de plugins / themes
 ```zsh
