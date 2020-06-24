@@ -1,5 +1,11 @@
 # Wordpress base
 
+###UPDATES TO DO :
+
+* check this URL and implement `.export.sh` https://github.com/nezhar/wordpress-docker-compose , actually gives an error : `-bash: ./export.sh: Permission denied`
+
+
+
 Per arrancar el composer : 
 
 ## To install WP

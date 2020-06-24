@@ -10,3 +10,5 @@ wp
 app/plugins/*
 app/themes/*
 !app/themes/metiss
+!vendor/docker/*
+!vendor/config/*
