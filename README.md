@@ -10,6 +10,22 @@ composer install
 # Docker: PHP & MySQL
 
 ## Configurar
+
+### Composer
+En el fitxer `composer.json` es poden configurar els diferents elements del WP com per exemple :
+
+* la carpeta on s'instalará tots els fitxers 
+```zsh "webroot-dir": "wp" ```
+
+* El llistat de plugins / themes
+```zsh
+ "require": {
+        "wordpress/wordpress": "5.4.2",
+        "wpackagist-plugin/wordpress-seo":">=7.0.2"
+```
+Podem anar afegint els differents plugins o themes si és necessari del repositori : https://wpackagist.org/ . Aquests s'afegiran directament en la carpeta `/wp/` i estaran automaticament configurats.
+
+### Docker 
 * `PHP_VERSION` versión de PHP ([Versiones disponibles de PHP](https://github.com/docker-library/docs/blob/master/php/README.md#supported-tags-and-respective-dockerfile-links)).
 * `PHP_PORT` puerto para servidor web.
 * `MYSQL_VERSION` versión de MySQL([Versiones disponibles de MySQL](https://hub.docker.com/_/mysql)).
@@ -31,7 +47,7 @@ docker-compose down     # Parar i eliminar els contenidors.
 ## Estructura de fitxers
 
 * `/docker/` contiene los archivos de configuración de Docker.
-* `/wo/` carpeta para los archivos PHP del proyecto WP.
+* `/wp/` carpeta para los archivos PHP del proyecto WP.
 
 
 
