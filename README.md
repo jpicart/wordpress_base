@@ -17,11 +17,11 @@ composer install
 * `MYSQL_PASSWORD` clave de acceso para conectarse a MySQL.
 * `MYSQL_DATABASE` nombre de la base de datos que se crea por defecto.
 
-##Per arrancar el docker
+## Per arrancar el docker
 ```zsh
 docker-compose up -d 
 ```
-#Un cop arrancat el docker
+# Un cop arrancat el docker
 ```zsh
 docker-compose start    # Arrancar.
 docker-compose stop     # Parar.
