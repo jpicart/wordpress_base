@@ -1,5 +1,26 @@
 {
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+            	"type": "webroot",
+                "name": "wordpress/wordpress",
+                "version": "5.4.2",
+                "dist": {
+                    "url": "https://github.com/WordPress/WordPress/archive/5.4.2.zip ",
+                    "type": "zip"
+                },
+                "require": {
+                	"fancyguy/webroot-installer": "^1.0"
+                }
+            }
+        }
+    ],
     "require": {
-        "monolog/monolog": "1.0.*"
+        "wordpress/wordpress": "5.4.2"
+    },
+    "extra": {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress/wordpress"
     }
 }
