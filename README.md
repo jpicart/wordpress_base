@@ -1,6 +1,6 @@
 # Wordpress base
 
-###UPDATES TO DO :
+### UPDATES TO DO :
 
 * This command worked for Backup `docker exec [Contaier] /usr/bin/mysqldump -u dbuser --password=dbpass wordpress > backup.sql`
 * sudo bash export.sh <- worked on macbook install (test)
