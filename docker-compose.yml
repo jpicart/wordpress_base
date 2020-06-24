@@ -14,19 +14,15 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3306:3306"
+    command: [
+        '--default_authentication_plugin=mysql_native_password',
+        '--character-set-server=utf8mb4',
+        '--collation-server=utf8mb4_unicode_ci'
+    ]
     volumes:
       - ./:/docker-entrypoint-initdb.d
       - db_data:/var/lib/mysql
     restart: always
-
-  wpcli:
-    image: wordpress:cli
-    volumes:
-      - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./wp-app:/var/www/html
-    depends_on:
-      - mysql
-      - php
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:5.0.1
