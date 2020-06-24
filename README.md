@@ -2,7 +2,7 @@
 
 Per arrancar el composer : 
 
-##To install WP
+## To install WP
 ```zsh
 composer install 
 ```
