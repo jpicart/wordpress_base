@@ -9,6 +9,11 @@
 * add comments in process of docker (ex: url? what is it doing,...)
 * add final comment docker to show mysql user, pwd, database
 
+### Linux possibles issues
+* sudo chown -R www-data:www-data [path/to/wp-content]
+* also "chmod 777 wp-contnent" 
+* Some changes have been done to be wp-config so WP will not ask for FTP access
+
 Per arrancar el composer : 
 
 ## To install WP
